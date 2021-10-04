@@ -5,6 +5,40 @@
 
     margin:0;
     padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+:root{
+    --font-primary:monospace; 
+    --font-secundary:serif ;
+    --font-action: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hamb {   
+    /*background-color: red;*/
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.show-menu .hamb {
+    right: 16rem;
+}
+
+
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
 }
 
 header{
@@ -13,6 +47,7 @@ height: 100vh;
 overflow: hidden;
 position: relative;
 }
+
 
 .img-wrapper{
 
@@ -50,9 +85,10 @@ position: absolute;
 }
 
 .banner h1{
+  
 color: #ffff;
 font-size: 3rem;
-font-family:monospace;
+font-family: var(--font-primary);
 font-weight: 200;
 text-shadow: .2rem .3rem 2px reba(0,0,0,.4);
 line-height: 3.5rem;
@@ -75,7 +111,7 @@ animation: moveBanner 1s 0.5s forwards;
 
 .banner p{
 
-    font-family: monospace ;
+    font-family: var(--font-primary) ;
     color:#fff;
     font-size: 2rem;
     text-shadow: .2rem .2rem reba(0,0,0,.4);
@@ -89,7 +125,7 @@ animation: moveBanner 1s 0.5s forwards;
 
 .banner button {
 
-    font-family: monospace;
+    font-family: var(--font-primary);
     color:white;
     text-transform: uppercase;
     letter-spacing: .1;
@@ -108,4 +144,69 @@ animation: moveBanner 1s 0.5s forwards;
     opacity: 0.5;
 }
 
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    right: -20rem;
+    transition: all 1s;
+}
 
+   .sidebar.show-menu {
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.menu-item{
+text-align: center;
+margin-bottom: .5rem;
+    
+}
+
+.menu-link{
+font-family:var(--font-action);
+font-size: 2rem;
+color: #555;
+transition: color 0.5s;
+}
+
+.menu-link:hover{
+color:blueviolet;
+
+}
+
+.social-media {
+position:absolute;
+bottom:2rem;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.social-media i{
+    background-color: #6a3093;
+    color:rgba(255,255,255,1);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+
+}
+
+.social-media i:hover{
+    background-color: #a044ff
+}
