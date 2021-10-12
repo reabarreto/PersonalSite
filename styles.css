@@ -40,6 +40,7 @@
     height: .1rem;
     background-color: #fff;
     box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: transform 0.3s;
     
 }
 
@@ -58,7 +59,37 @@
     transform: rotate(-45deg) translate(.2rem, -.45rem);
 }
 
+.hamb span{
+position: absolute;
+left: 3rem;
+height: 2rem;
+width: 6rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #a044ff;
+color: #fff;
+font-family: var(--font-action);
+align-content: center ;
+opacity: 0;
+}
 
+.hamb span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #a044ff;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem
+}
+
+
+.show-menu .hamb:hover span{
+    opacity: 1;
+    transition: all 1s;
+    
+}
 header{
 width: 100%;
 height: 100vh;
@@ -82,7 +113,7 @@ position: relative;
     height: 100%;
     object-fit: cover;
     opacity:0.5;
-    animation: zoom 25s;
+    animation: zoom 20s;
 }
 
 @keyframes zoom{
@@ -183,6 +214,8 @@ animation: moveBanner 1s 0.5s forwards;
     transform: translate(-50%,-50%);
 
 }
+
+
 
 .menu-item{
 text-align: center;
