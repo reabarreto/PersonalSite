@@ -11,7 +11,7 @@
 
 :root{
     --font-primary:monospace; 
-    --font-secundary:serif ;
+    --font-secundary:Roboto ;
     --font-action: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --color-primary:#457fca;
     --color-action:#5691c8;
@@ -323,3 +323,43 @@ color: rgb(51, 56, 56);
 border-bottom: solid 3px #457fca;
 margin-bottom: 1.5rem;
 }
+
+.conhecimento-header{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary); 
+
+}
+
+.conhecimento-header i{
+    font-size: 2rem;
+}
+
+.conhecimento-header h3{
+font-family: var(--font-primary);
+font-size: 2em;
+padding-left: 1rem;
+}
+
+.conhecimento-text{
+font-family:var(--font-secundary);
+margin-top:1rem ;
+
+}
+
+.conhecimento-img-wrapper{
+   grid-column: 7 /11;
+   grid-row: 2 / 6;
+   width: 100%; 
+
+
+}
+
+.conhecimento-img-wrapper img{
+  object-fit: cover;
+  width: 100%;
+
+ 
+ 
+ }
+ 
