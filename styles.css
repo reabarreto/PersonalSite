@@ -62,18 +62,18 @@
 }
 
 .hamb span{
-position: absolute;
-left: 3rem;
-height: 2rem;
-width: 6rem;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color:var(--color-primary);
-color: #fff;
-font-family: var(--color-action);
-align-content: center ;
-opacity: 0;
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-primary);
+    color: #fff;
+    font-family: var(--color-action);
+    align-content: center ;
+    opacity: 0;
 }
 
 .hamb span::before{
@@ -93,10 +93,10 @@ opacity: 0;
     
 }
 header{
-width: 100%;
-height: 100vh;
-overflow: hidden;
-position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -125,26 +125,25 @@ position: relative;
     100%{
         transform: scale(1)
     }
-    }
+}
     
 
 .banner{
-position: absolute;
- top:30%;
- left: 15%;
-
+    position: absolute;
+    top:30%;
+    left: 15%;
 }
 
 .banner h1{
   
-color: #ffff;
-font-size: 3rem;
-font-family: var(--font-primary);
-font-weight: 200;
-text-shadow: .2rem .3rem 2px reba(0,0,0,.4);
-line-height: 3.5rem;
-opacity: 0;
-animation: moveBanner 1s 0.5s forwards;
+    color: #ffff;
+    font-size: 3rem;
+    font-family: var(--font-primary);
+    font-weight: 200;
+    text-shadow: .2rem .3rem 2px reba(0,0,0,.4);
+    line-height: 3.5rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
 }
 
 @keyframes moveBanner{
@@ -162,47 +161,47 @@ animation: moveBanner 1s 0.5s forwards;
 
 .banner p{
 
-    font-family: var(--font-primary) ;
-    color:#fff;
-    font-size: 2rem;
-    text-shadow: .2rem .2rem reba(0,0,0,.4);
-    line-height: 3.5rem;
-    margin-bottom: 2rem;
-    animation: moveBanner 2s 0.7s forwards;
-    opacity: 0;
+        font-family: var(--font-primary) ;
+        color:#fff;
+        font-size: 2rem;
+        text-shadow: .2rem .2rem reba(0,0,0,.4);
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+        animation: moveBanner 2s 0.7s forwards;
+        opacity: 0;
 
 
 }
 
 .banner button {
 
-    font-family: var(--font-primary);
-    color:white;
-    text-transform: uppercase;
-    letter-spacing: .1;
-    background: #457fca;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: 0;
-   padding: 1rem 3rem;
-   border:none;
-   border-radius: 5px;
-   cursor:pointer;
-   animation: moveBanner 2s 0.9s forwards;
-}
+        font-family: var(--font-primary);
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: .1;
+        background: #457fca;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        opacity: 0;
+        padding: 1rem 3rem;
+        border:none;
+        border-radius: 5px;
+        cursor:pointer;
+        animation: moveBanner 2s 0.9s forwards;
+    }
 
 .banner button:hover{
     opacity: 0.5;
 }
 
 .sidebar{
-    width: 20rem;
-    height: 100vh;
-    background-color: #fff;
-    position: fixed;
-    top:0;
-    right: -20rem;
-    transition: all 1s;
+        width: 20rem;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        top:0;
+        right: -20rem;
+        transition: all 1s;
 }
 
 .show-menu .sidebar {
@@ -210,39 +209,39 @@ animation: moveBanner 1s 0.5s forwards;
 }
 
    .menu{
-    position: absolute;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-50%);
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
 
 }
 
 
 
 .menu-item{
-text-align: center;
-margin-bottom: .5rem;
+    text-align: center;
+    margin-bottom: .5rem;
     
 }
 
 .menu-link{
-font-family:var(--font-action);
-font-size: 2rem;
-color: #555;
-transition: color 0.5s;
+    font-family:var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.5s;
 }
 
 .menu-link:hover{
-color:var(--color-action);
+    color:var(--color-action);
 
 }
 
 .social-media {
-position:absolute;
-bottom:2rem;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
+    position:absolute;
+    bottom:2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
@@ -265,10 +264,10 @@ justify-content: space-evenly;
 }
 
 .conhecimentos{
-display:grid;
-grid-template-columns: repeat(16, 1fr);
-grid-template-rows: repeat(6, 6rem);
-row-gap: .5rem;
+    display:grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    row-gap: .5rem;
 
 }
 
@@ -310,25 +309,24 @@ sessao-conhecimentos{
 }
 
 .sessao-header{
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .sessao-header h1{
-font-family: var(--font-primary);
-font-size: 3rem;
-color: rgb(51, 56, 56);
-border-bottom: solid 3px #457fca;
-margin-bottom: 1.5rem;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: rgb(51, 56, 56);
+    border-bottom: solid 3px #457fca;
+    margin-bottom: 1.5rem;
 }
 
 .conhecimento-header{
     display: flex;
     align-items: center;
     color: var(--color-primary); 
-
 }
 
 .conhecimento-header i{
@@ -336,9 +334,9 @@ margin-bottom: 1.5rem;
 }
 
 .conhecimento-header h3{
-font-family: var(--font-primary);
-font-size: 2em;
-padding-left: 1rem;
+    font-family: var(--font-primary);
+    font-size: 2em;
+    padding-left: 1rem;
 }
 
 .conhecimento-text{
@@ -351,15 +349,10 @@ margin-top:1rem ;
    grid-column: 7 /11;
    grid-row: 2 / 6;
    width: 100%; 
-
-
 }
 
 .conhecimento-img-wrapper img{
   object-fit: cover;
   width: 100%;
-
- 
- 
  }
  
